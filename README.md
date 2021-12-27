@@ -1,4 +1,4 @@
-# Multi_Threaded_WebServer-
+# Multi_Threaded_WebServer
 
 The simplest approach to building a multi-threaded server is to spawn a new
 thread for every new http request. The OS will then schedule these threads
