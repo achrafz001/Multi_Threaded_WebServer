@@ -1,5 +1,5 @@
 # Multi_Threaded_WebServer-
-Academic project
+
 The simplest approach to building a multi-threaded server is to spawn a new
 thread for every new http request. The OS will then schedule these threads
 according to its own policy. The advantage of creating these threads is that
@@ -49,7 +49,7 @@ explicitly waits for the child CGI process to complete before continuing and
 accepting more HTTP requests. When making your server multi-threaded, you
 should not modify this section of the code.
 
-Security Considerations
+# Security Considerations
 Running a networked server can be dangerous, especially if you are not
 careful. Thus, security is something you should consider carefully when
 creating a web server. One thing you should always make sure to do is not
@@ -64,13 +64,13 @@ pathname with .. in it, thus avoiding any traversals up the file system
 tree. More sophisticated solutions could use chroot() or Linux containers,
 but perhaps those are beyond the scope of the project.
 
-Command-line Parameters
+# Command-line Parameters
 Your C program must be invoked exactly as follows:
 
 prompt> ./wserver [-d basedir] [-p port] [-t threads] [-b buffers]
 
 
-The command line arguments to your web server are to be interpreted as
+* The command line arguments to your web server are to be interpreted as
 follows.
 
 
@@ -94,11 +94,11 @@ For example, you could run your program as:
 prompt> server -d . -p 8003 -t 8 -b 16
 
 
-In this case, your web server will listen to port 8003, create 8 worker threads for
+* In this case, your web server will listen to port 8003, create 8 worker threads for
 handling HTTP requests, and allocate 16 buffers for connections that are currently
 in progress (or waiting).
 
-Source Code Overview
+# Source Code Overview
 We recommend understanding how the code that we gave you works.  We provide
 the following files:
 
