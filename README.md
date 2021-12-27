@@ -94,14 +94,11 @@ For example, you could run your program as:
 prompt> server -d . -p 8003 -t 8 -b 16
 
 
-* In this case, your web server will listen to port 8003, create 8 worker threads for
+In this case, your web server will listen to port 8003, create 8 worker threads for
 handling HTTP requests, and allocate 16 buffers for connections that are currently
 in progress (or waiting).
 
 # Source Code Overview
-We recommend understanding how the code that we gave you works.  We provide
-the following files:
-
 
 wserver.c: Contains main() for the web server and the basic serving loop.
 
@@ -130,9 +127,4 @@ these programs. You can type make clean to remove the object files and the
 executables. You can type make server to create just the server program,
 etc. As you create new files, you will need to add them to the Makefile.
 
-The best way to learn about the code is to compile it and run it. Run the
-server we gave you with your preferred web browser. Run this server with the
-client code we gave you. You can even have the client code we gave you contact
-any other server that speaks HTTP. Make small changes to the server code
-(e.g., have it print out more debugging information) to see if you understand
-how it works.
+
