@@ -89,7 +89,7 @@ buffers: the number of request connections that can be accepted at one
 time. Must be a positive integer. Note that it is not an error for more or
 less threads to be created than buffers. Default: 1.
 
-For example, you could run your program as:
+* For example, you could run your program as:
 
 prompt> server -d . -p 8003 -t 8 -b 16
 
